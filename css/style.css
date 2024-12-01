@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f2f2f2;
+}
+
+#top {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between sections */
+    align-items: center; /* Vertical centering */
+    margin-bottom: 20px; /* Space below the top section */
+    border: 1px solid #ccc;
+}
+
+#topLeft, #topMiddle, #topRight {
+    flex: 1; /* Equal width sections */
+}
+
+#topMiddle {
+    text-align: center; /* Center text in the middle section */
+}
+
+.sliderContainer {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.slider {
+    width: 100%;
+}
+
+/* Input field rows */
+.row {
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center-align input fields */
+    margin-bottom: 10px;
+}
+
+.letter-input {
+    width: 30px; /* Fixed width */
+    height: 30px; /* Fixed height */
+    text-align: center; /* Center text inside input */
+    margin: 5px; /* Space between inputs */
+    font-size: 16px; /* Larger text size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#randomWord {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+button, input {
+    display: block;
+    margin: 10px auto;
+}
+
+#wordsContainer {
+    margin-top: 20px;
+}
+
+.row input:disabled {
+    background-color: #f0f0f0;
+    color: #999;
+    pointer-events: none;
+}
+
+.keyboard {
+    display: inline-block;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.key-row {
+    display: flex;
+}
+
+.key {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    background: #f9f9f9;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.key:active {
+    background: #d4d4d4;
+    transform: scale(0.95);
+}
+
+.key:hover {
+    background: #eaeaea;
+}
